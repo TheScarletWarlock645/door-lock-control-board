@@ -1,0 +1,14 @@
+{
+    "user_1": {
+        "name": "placeholder",
+        "rfid_1": "placeholder",
+        "rfid_2": "placeholder",
+        "login_times": "~"
+    },
+    "user_2": {
+        "name": "placeholder",
+        "rfid_1": "placeholder",
+        "rfid_2": "placeholder",
+        "login_times": "4"
+    }
+}

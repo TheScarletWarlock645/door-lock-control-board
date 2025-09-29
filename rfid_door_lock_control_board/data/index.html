@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Door Lock Portal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="opens">
+
+        </div>
+        <div class="users">
+            <table>
+
+            </table>
+            <form>
+                <input type="text" name="name" placeholder="name*" required>
+                <input type="text" name="rfid_1" placeholder="first rfid card*" required>
+                <input type="text" name="rfid_2" placeholder="second rfid card">
+                <input type="submit" value="Add User">
+            </form>
+        </div>
+        <script>
+
+            const users = getUsers();
+            console.log(users);
+
+            async function getUsers() {
+                const res = await fetch(users.json);
+                const users = await res.json();
+
+                return users;
+            }
+        </script>
+    </body>
+</html>
